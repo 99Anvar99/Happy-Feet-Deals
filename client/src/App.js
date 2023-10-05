@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home';
 import Navbar from './components/navBar';
 import Footer from './components/footer';
+import Category from './pages/category';
+import Card from './pages/card';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
         <Navbar/>
           <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/Category" element={<Category/>} />
+            <Route path="/Card" element={<Card/>} />
           </Routes>
           <Footer/>
       </Router>
