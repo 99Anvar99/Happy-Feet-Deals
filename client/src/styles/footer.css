@@ -1,0 +1,22 @@
+.footer {
+    background: #215e54;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .socialMedia svg {
+    color: white;
+    margin: 20px;
+    font-size: 30px; /* Adjust the font size as needed */
+    cursor: pointer;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .socialMedia svg {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+    }
+  }
