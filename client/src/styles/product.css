@@ -1,0 +1,61 @@
+/* Default styles for larger screens */
+.homeTitle {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 40px;
+}
+
+.products {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 20px; /* Add some spacing between grid items */
+    justify-content: center;
+}
+
+.product {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 300px; /* Limit width on larger screens */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: 300px; /* Set a fixed height for images */
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.product .description {
+    text-align: center;
+    padding: 10px; /* Add padding for better readability */
+}
+
+.addToCartBttn {
+    background-color: transparent;
+    border: 2px solid rgb(19, 19, 19);
+    min-width: 100px;
+    padding: 5px 10px; /* Use shorthand for padding */
+    border-radius: 15px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .homeTitle {
+        font-size: 32px; /* Reduce font size for smaller screens */
+    }
+
+    .product {
+        margin: 20px; /* Reduce margin for smaller screens */
+    }
+}
+
+.addToCartBttn:hover {
+    background-color: rgb(19, 19, 19);
+    color: white;
+    cursor: pointer;
+}
