@@ -1,15 +1,17 @@
 body {
     background-color: #EEEEEE;
     margin: 0;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 #homeTitle {
+    font-family: 'Courier New', Courier, monospace;
     color:black;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
     text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0;
 }
