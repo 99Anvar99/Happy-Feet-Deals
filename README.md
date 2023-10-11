@@ -1,1 +1,24 @@
 # Happy-Feet-Deals
+
+## Purpose
+
+Happy Feet Deals is a website that sells shoes and users can create an account, log in and browse through the page to see what shoes they are interested in and when they decide they can add it to their cart and purchase it.
+
+## Built With
+
+- Express
+- React
+- Node
+- Stripe
+- Apollo
+- JWT
+- Mongoose 
+
+## Website
+
+## Created by
+
+- Ayush Sharma
+- Anvar
+- Michael Oloruntoba
+- Hung Quoc Dang
