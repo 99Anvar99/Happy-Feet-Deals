@@ -1,22 +1,34 @@
 .footer {
-    background: #215e54;
-    color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 50px;
+  background: #215e54;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto; /* Change height to auto to allow content to expand vertically */
+  padding: 10px; /* Add padding for spacing */
+}
+
+.socialMedia {
+  display: flex; /* Use flexbox to align social media icons */
+  justify-content: center; /* Center the icons horizontally */
+  align-items: center; /* Center the icons vertically */
+}
+
+.socialMedia svg {
+  color: white;
+  margin: 10px; /* Adjust the margin for spacing */
+  font-size: 24px; /* Adjust the font size as needed */
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .socialMedia {
+    flex-direction: column; /* Stack icons vertically on smaller screens */
   }
-  
+
   .socialMedia svg {
-    color: white;
-    margin: 20px;
-    font-size: 30px; /* Adjust the font size as needed */
-    cursor: pointer;
+    margin: 5px; /* Adjust the margin for spacing on smaller screens */
+    font-size: 20px; /* Adjust the font size for smaller screens */
   }
-  
-  @media only screen and (max-width: 600px) {
-    .socialMedia svg {
-      font-size: 20px; /* Adjust the font size for smaller screens */
-    }
-  }
+}
