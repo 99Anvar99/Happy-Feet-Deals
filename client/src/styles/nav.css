@@ -8,6 +8,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
   }
   
   header h1 a {
@@ -37,6 +38,8 @@ header {
   
   li {
     margin: 0 10px;
+    font-size: large;
+    font-weight: bold;
   }
   
   /* Responsive styles */
