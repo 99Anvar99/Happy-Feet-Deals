@@ -16,6 +16,10 @@ Happy Feet Deals is a website that sells shoes and users can create an account, 
 
 ## Website
 
+## License 
+
+Distributed under the MIT License.
+
 ## Created by
 
 - Ayush Sharma
