@@ -32,7 +32,7 @@ const resolvers = {
           path: 'orders.products',
           populate: 'category'
         });
-console.log('resolver page 35', user.orders)
+
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
 
         return user;
@@ -56,7 +56,7 @@ console.log('resolver page 35', user.orders)
       const url = new URL(context.headers.referer).origin;
       const order = new Order({ products: args.products });
       const line_items = [];
-console.log('resolvers line 59', order);
+
       const { products } = await order.populate('products');
 
       for (let i = 0; i < products.length; i++) {
@@ -96,30 +96,17 @@ console.log('resolvers line 59', order);
 
       return { token, user };
     },
-    addOrder: async (parent, args, context) => {
-      console.log('args: ', args);
-        const newOrder = await Order.create({purchaseDate: new Date(), products: args.orderItems});
-        return newOrder;
-      //if (context.user) {
-      
-        //  for(const item of orderItems) {
-        //   const product = await Product.findById(item.productId);
-        //   if(product) {
-        //     console.log('product: ', product);
-        //     orderItems.push(item);
-        //   }
-        //  }
-        //  const res = await Order.create({
-        //   purchaseDate: new Date(), // TODO: fix this timestamp
-        //   products: [orderItems]
-        //  });
-    
-        //  console.log('res: ', res);
-        // return res;
-      //}
+    addOrder: async (parent, { products }, context) => {
+      console.log(context);
+      if (context.user) {
+        const order = new Order({ products });
 
-      //return orderItems;
-      // throw new AuthenticationError('Not logged in');
+        await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
+
+        return order;
+      }
+
+      throw new AuthenticationError('Not logged in');
     },
     updateUser: async (parent, args, context) => {
       if (context.user) {
@@ -137,7 +124,7 @@ console.log('resolvers line 59', order);
       const user = await User.findOne({ email });
 
       if (!user) {
-        throw new AuthenticationError('no user found');
+        throw new AuthenticationError('Incorrect credentials');
       }
 
       const correctPw = await user.isCorrectPassword(password);
