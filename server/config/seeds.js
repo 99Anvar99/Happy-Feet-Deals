@@ -22,7 +22,7 @@ db.once('open', async () => {
       description:
         'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
       image: 'size-boy5-ua.jpg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 119.99,
       quantity: 50
     },
@@ -31,7 +31,7 @@ db.once('open', async () => {
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
       image: 'size-boy3-sneakers.jpg',
-      category: categories[1]._id,
+      category: categories[0]._id,
       price: 99.99,
       quantity: 50
     },
@@ -131,22 +131,22 @@ db.once('open', async () => {
   await User.deleteMany();
 
   await User.create({
-    firstName: 'user1_firstname',
-    lastName: 'user1_lastname',
-    email: 'user1@testmail.com',
-    password: '12345',
+    firstName: 'Pamela',
+    lastName: 'Washington',
+    email: 'pamela@testmail.com',
+    password: 'password12345',
     orders: [
       {
-        products: [products[1]._id, products[1]._id, products[1]._id]
+        products: [products[0]._id, products[0]._id, products[1]._id]
       }
     ]
   });
 
   await User.create({
-    firstName: 'user2_firstname',
-    lastName: 'user2_lastname',
-    email: 'user2@testmail.com',
-    password: '1234'
+    firstName: 'Elijah',
+    lastName: 'Holt',
+    email: 'eholt@testmail.com',
+    password: 'password12345'
   });
 
   console.log('users seeded');
