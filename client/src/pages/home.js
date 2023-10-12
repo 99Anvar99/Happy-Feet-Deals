@@ -1,20 +1,16 @@
-import React from 'react'
-import { PRODUCTS } from '../components/product'
-import { Product } from '../pages/product'
-// importing style
-import '../styles/home.css'
+import React from "react";
+import ProductList from "../components/ProductList";
+import CategoryMenu from "../components/CategoryMenu";
+import Cart from "../components/Cart";
 
-function home() {
+const Home = () => {
   return (
-    <div className="home">
-      <h1 id="homeTitle">Products</h1>
-      <div className="products">
-       {PRODUCTS.map((product) => (
-         <Product data={product} />
-       ))}
-      </div>
+    <div className="container">
+      <CategoryMenu />
+      <ProductList />
+      <Cart />
     </div>
-  )
-}
+  );
+};
 
-export default home
+export default Home;
