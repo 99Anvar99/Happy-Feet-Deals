@@ -101,6 +101,7 @@ const resolvers = {
       if (context.user) {
         const order = new Order({ products });
 
+        await Order.create(order);
         await User.findByIdAndUpdate(context.user._id, { $push: { orders: order } });
 
         return order;
