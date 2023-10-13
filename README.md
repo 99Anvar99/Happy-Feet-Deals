@@ -23,7 +23,7 @@ Distributed under the MIT License.
 ## Created by
 
 - Ayush Sharma
-- Anvar
+- Anvar Ganiev
 - Michael Oloruntoba
 - Hung Quoc Dang
 
