@@ -26,3 +26,7 @@ Distributed under the MIT License.
 - Anvar
 - Michael Oloruntoba
 - Hung Quoc Dang
+
+## Screenshot
+
+![Alt text](ReadmePicture-1.png)
