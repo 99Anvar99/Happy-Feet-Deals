@@ -54,5 +54,5 @@ Distributed under the MIT License.
 
 * **Ayush Sharma** - *Back-End* - [Ayush Sharma](https://github.com/AyushManiSharma) - *server/config, server/server.js, client/components*
 * **Anvar Ganiev** - *Font-End* - [Anvar Ganiev](https://github.com/99Anvar99) - *client/public, client/app.js, index.js, index.css, serviceworker.js*
-* **Michael Oloruntoba** - *Front-Back Ends* - [Michael Oloruntoba](https://github.com/MichaelToba) - * server/utils, client/pages, client/utils*
+* **Michael Oloruntoba** - *Front-Back Ends* - [Michael Oloruntoba](https://github.com/MichaelToba) - *server/utils, client/pages, client/utils*
 * **Hung Quoc Dang** - *Back-End* - [Hung Quoc Dang](https://github.com/HungQuocDang) - *server/models, server/schemas*
