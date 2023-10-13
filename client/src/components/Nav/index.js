@@ -1,7 +1,6 @@
 import React from "react";
 import Auth from "../../utils/auth";
 import { Link } from "react-router-dom";
-import "../../styles/nav.css";
 
 function Nav() {
 
@@ -44,7 +43,9 @@ function Nav() {
     <header className="flex-row px-1">
       <h1>
         <Link to="/">
-          Happy-Feet-Deals
+         
+          <span role="img" aria-label="shopping bag">   👀...👀...  </span>
+          Happy-Feet-Shop ...👀...👀
         </Link>
       </h1>
 
