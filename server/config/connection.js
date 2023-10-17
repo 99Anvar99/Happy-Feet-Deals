@@ -4,6 +4,8 @@ const mongoose = require('mongoose');
 
 // mongoose.connect(process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/happyfeet-shoppinga');
 // seeded to MongoDB Atlas cloub
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Hung1:LKI1G4P6rZKZJZlz@cluster0.rqdogfy.mongodb.net/?retryWrites=true&w=majority');
+// mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Hung1:LKI1G4P6rZKZJZlz@cluster0.rqdogfy.mongodb.net/?retryWrites=true&w=majority');
+
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hunga:Test1234@cluster0.w5wyiom.mongodb.net/');
 
 module.exports = mongoose.connection;
