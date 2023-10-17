@@ -6,6 +6,6 @@ const mongoose = require('mongoose');
 // seeded to MongoDB Atlas cloub
 // mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://Hung1:LKI1G4P6rZKZJZlz@cluster0.rqdogfy.mongodb.net/?retryWrites=true&w=majority');
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hunga:Test1234@cluster0.w5wyiom.mongodb.net/');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://hungb:Test1234@cluster0.pv7ehpy.mongodb.net/');
 
 module.exports = mongoose.connection;
